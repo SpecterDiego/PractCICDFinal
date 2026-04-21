@@ -34,7 +34,7 @@ jobs:
 
     - name: Push a Docker Hub
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/proyecto_final_devops:tagname
+        docker push ${{ secrets.DOCKER_USERNAME }}/proyecto_final_devops:latest
 
     - name: Deploy en Render
       run: |
